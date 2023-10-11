@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url("carrusel2.jpg");
+    padding-bottom: 200px;
+    
+
+}
+
+.hijo{
+    display: inline-block;
+
+    color: white;
+
+
+}
+
+.hijo2{
+    width: 15%;
+    text-align: center;
+
+    
+}
+
+i {
+    font-size: 50px;
+}
+
+h1{
+    width: 100px;
+}
+
+h6{
+    width: 400px;
+}
+
+.boton1{
+    background-color: orange;
+    border-radius: 10px;
+}
+.boton2{
+    background-color: aqua;
+    border-radius: 10px;
+}

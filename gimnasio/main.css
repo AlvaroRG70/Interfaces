@@ -1,0 +1,59 @@
+.cross {
+    display: inline-block;
+    width: 300px;
+}
+
+.titulo {
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    margin-left: 20px;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+}
+
+a {
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+}
+
+.enlinea {
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+li{
+    list-style: none;
+    
+    text-align: center;
+}
+
+
+ul {
+    position: absolute;
+}
+
+li:hover .submenu{
+    display: block;
+}
+
+.submenu {
+    display: none;
+    padding: 0px;
+    margin-left: 0px;
+    list-style: none;
+
+}
+
+header {
+    position: sticky;
+}
+
+ul {
+    padding-left: 0px;
+    
+    border: 2px solid goldenrod;
+}
+
+.espacio {
+    width: 60%;
+}
