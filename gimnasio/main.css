@@ -23,17 +23,12 @@ a {
 
 li{
     list-style: none;
-    
     text-align: center;
 }
 
 
 ul {
     position: absolute;
-}
-
-li:hover .submenu{
-    display: block;
 }
 
 .submenu {
@@ -44,16 +39,25 @@ li:hover .submenu{
 
 }
 
+li:hover .submenu{
+    display: block;
+}
+
+
+
 header {
     position: sticky;
 }
 
 ul {
     padding-left: 0px;
-    
     border: 2px solid goldenrod;
 }
 
 .espacio {
     width: 60%;
+}
+
+.posicion {
+    position: absolute;
 }

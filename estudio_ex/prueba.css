@@ -1,0 +1,74 @@
+.frontal {
+    display: inline-block;
+    width: 20%;
+    background-color: aqua;
+    height: 100px;
+    
+}
+.frontal2 {
+    display: inline-block;
+    width: 79%;
+    background-color: rgb(93, 53, 118);
+    height: 100px;
+   
+}
+
+.central {
+    background-color: rgb(255, 131, 191);
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+}
+.central2 {
+    background-color: rgb(199, 212, 19);
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.bajo1 {
+    width: 33%;
+    display: inline-block;
+    background-color: rgb(28, 113, 187);
+    height: 300px;
+    margin-top: 10px;
+}
+.bajo2 {
+    width: 33%;
+    display: inline-block;
+    background-color: rgb(28, 113, 187);
+    height: 300px;
+    margin-top: 10px;
+}
+
+.bajo3 {
+    width: 33%;
+    display: inline-block;
+    background-color: rgb(28, 113, 187);
+    height: 300px;
+    margin-top: 10px;
+}
+
+.lista li{
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    background-color: brown
+}
+
+.lista li:hover{
+    background-color: aqua;
+}
+
+.submenu{
+    display: none;
+}
+
+li:hover .submenu{
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+
+}
