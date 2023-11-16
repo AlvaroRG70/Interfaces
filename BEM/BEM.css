@@ -1,0 +1,28 @@
+.tareas{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.tareas__item{
+    display: flex;
+    background-color: aqua;
+    padding: 5px;
+}
+
+.tareas__item-texto{
+    color: blue;
+    flex-grow: 1;
+}
+
+.tareas__item-accion{
+    cursor: pointer;
+}
+
+.tareas__item-accion--completada{
+    color: rgb(0, 255, 13);
+}
+
+
+.tareas__item-accion--eliminar{
+    color: rgb(255, 0, 0);
+}
