@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: caption;
+}
+.cabecera {
+    display: flex;
+    background-color: #EEEEEE;
+    color: #222831;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+.cabecera > div {
+    margin-left: 20px;
+}
+
+.menu {
+    
+    display: flex;
+    justify-content: center;
+    background-color: #222831;
+    color: white;
+    
+}
+
+.menu > div {
+    width: 150px;
+    height: 60px;
+    padding-top: 22px;
+    color: #EEEEEE;
+    text-align: center;
+    position: relative;
+}
+
+section {
+    text-align: center;
+    width: 150px;
+}
+
+img {
+    width: 100px;
+    height: 100%;
+}
+
+.menu>div:hover {
+    
+    color: #00ADB5;
+    transition: all .1s;
+    border-bottom: solid #00ADB5 3px;
+    cursor: pointer;
+    
+    
+}
+
+
+.submenu {
+    visibility: hidden;
+    list-style: none;
+    position: absolute;
+    background-color: #393E46;
+    width: 150px;
+    
+
+
+}
+
+.menu div:hover .submenu {
+    visibility: visible;
+}
+
+
+.submenu li a{
+    display: block;
+    color: black;
+    color: #00ADB5;
+    margin-bottom: 5px;
+}
+
+.menu>div>span {
+    display: block;
+    padding-bottom: 21px;
+}
+
+
+.submenu li{
+    padding-top: 10px;
+}
+
+input {
+    width: 130px;
+}
+
+.boton {
+    width: 60px;
+    padding: 5px;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 3px;
+}
+
+.submenu > li {
+    color: #EEEEEE;
+}
+.enlacemenu{
+    text-decoration: none;
+    color: white;
+}
+
+.titulo{
+    margin: 30px;
+}
+
+
+
+.imagenes {
+    text-align: center;
+    margin: 0 auto;
+    align-items: center; 
+    align-content: center;
+    display: grid;
+    grid-template-areas: 
+        "grande grande grande grande descripcion"
+        "grande grande grande grande precio"
+        "chica1 chica2 chica3 chica4 compra"
+    ;
+    
+    width: 800px;
+    height: 520px;
+    box-shadow: 0 0 10px #393e46;
+    place-items: center;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+
+}
+
+.grande{
+    grid-area: grande;
+}
+.grande > img{
+    width: 400px;
+    height: auto;
+}
+
+.chica1{
+    grid-area: chica1;
+}
+
+.chica2{
+    grid-area: chica2;
+}
+
+.chica3{
+    grid-area: chica3;
+}
+
+.chica4{
+    grid-area: chica4;
+}
+
+.descripcion2{
+    grid-area: descripcion;
+}
+
+.descripcion2 > h1 {
+    margin-bottom: 20px;
+}
+
+
+.estrella{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 20px;
+}
+
+.precio{
+    grid-area: precio;
+    background-color: #00ADB5;
+    color:white;
+    padding: 20px;
+    border: 1px solid #222831;
+    border-radius: 5px;
+}
+
+.compra{
+    grid-area: compra;
+}
+
+.compra > button {
+    width: 200px;
+    height: 50px;
+    background-color: #393E46;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+    grid-template-areas: 
+        "redes redes"
+        "direccion descripcion"
+    ;
+    margin-top: 50px;
+    background-color: #222831;
+    color: #EEEEEE;
+    bottom: 0;
+    justify-content: space-evenly
+    
+}
+
+
+.redes {
+    grid-area: redes;
+    margin: 20px;
+    text-align: center;
+}
+
+.direccion {
+    grid-area: direccion;
+    list-style: circle;
+    
+    
+
+}
+
+.descripcion {
+    grid-area: descripcion;
+    width: 400px;
+    
+}
+
+
+@media only screen and (max-width: 810px) {
+
+    .titulo{
+    
+        text-align: center;
+    
+    }
+
+
+}
+
+
+@media only screen and (max-width: 375px) {
+    
+    .cabecera {
+
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+        width: 100%;
+        
+    }
+    .cabecera > div {
+        margin-left: 0px;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        visibility: hidden;
+    }
+
+    .cabecera:hover ~ .menu{
+        visibility: visible;
+    }
+
+
+    .imagenes {
+        display: flex;
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    .grande > img{
+        width: 400px;
+        height: auto;
+    }  
+    .grande > img {
+
+        margin: 10px;
+        width: 70%; /* Ajustar la imagen al ancho del contenedor */
+        height: auto;
+    }
+    
+    
+    
+    .precio,
+    .compra {
+    width: 70%;
+    margin: 10px;
+    margin-bottom: 20px;/* Hacer que los elementos de precio y compra ocupen todo el ancho */
+    }
+
+    .compra > button {
+    width: 70%; /* Ajustar el botón al ancho del contenedor */
+    height: 40px; /* Reducir la altura del botón si es necesario */
+    }
+
+
+
+
+    
+
+
+
+    footer {
+        display: grid;
+        grid-template-areas: 
+            "redes" 
+            "redes"
+            "direccion" 
+            "descripcion"
+        ;
+        width: 100%;
+        font-size: 10px;
+    }
+    
+    
+    .redes {
+        grid-area: redes;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .direccion {
+        grid-area: direccion;
+        list-style: circle;
+        margin: 20px;
+        
+        
+    
+    }
+    
+    .descripcion {
+        grid-area: descripcion;
+        width: 400px;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    body {
+      background-color:#393E46;
+      color: white;
+    }
+    
+    .cabecera{
+        background-color: #393E46;
+        color: white;
+        
+    }
+    
+    .imagenes {
+        background-color: #222831;
+        box-shadow: 0 0 10px #EEEEEE;
+    }
+
+
+
+
+}
